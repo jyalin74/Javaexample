@@ -8,8 +8,8 @@ public class Subway {
         this.lineNumber = lineNumber;
     }
     public void take(int money){
-        this.money = money;
         passengerCount++;
+        this.money = money * passengerCount;
     }
 
     public void showInfo(){
